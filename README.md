@@ -14,7 +14,7 @@ This is a Python script that removes a Microsoft Store version of the legacy app
 
 ---
 
-##How to Run It?
+## How to Run It?
 - Open CMD as an Administrator
 - Type cd "C:/{filePathWhereEverYouDownloadedIt}"
 - Type "python runThis.py"
