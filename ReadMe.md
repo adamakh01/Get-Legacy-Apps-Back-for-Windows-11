@@ -1,4 +1,4 @@
-``Reinstall Legacy Apps
+#Reinstall Legacy Apps
 
 Overview:
 This is a Python script that removes a Microsoft Store version of the legacy app and installs some legacy apps back into the operating system.
