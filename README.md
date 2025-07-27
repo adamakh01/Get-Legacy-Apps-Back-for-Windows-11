@@ -24,6 +24,7 @@ This is a Python script that removes a Microsoft Store version of the legacy app
 - Type ```cd "C:/{filePathWhereEverYouDownloadedIt}"```
 - Type ```python runThis.py```
 - You should have all the stuff properly installed.
+- Delete the folder so when you search, you won't get duplicates of the same app.
 
 ---
 
