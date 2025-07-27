@@ -19,9 +19,6 @@ This is a Python script that removes a Microsoft Store version of the legacy app
 - Type cd "C:/{filePathWhereEverYouDownloadedIt}"
 - Type "python runThis.py"
 - You should have all the stuff properly installed.
-- Please note that this doesn't create shortcuts to the files, so to      
-  create them, right click on your desktop, add a shortcut, and type
-  "C:/Windows/System32/{WhateverProgramYouWantAShortcutFor}"
 
 ---
 

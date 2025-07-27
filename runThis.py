@@ -57,3 +57,36 @@ def installRegistryFiles(file):
         print(f"Failed to install {file}.reg: {e}")
 installRegistryFiles(files[0])
 installRegistryFiles(files[1])
+
+#Shortcuts
+#Exclusive to Math Input Panel
+filePathShortcut = "Shortcuts\Math Input Panel.lnk"
+source_file_shortcut = Path(filePathShortcut)
+destinationShortcut = Path("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Accessories\Tablet PC") / source_file_shortcut.name
+try:
+    if not source_file_shortcut.exists():
+        print(f"Source file {source_file_shortcut} does not exist.")
+    else:
+        shutil.copy(source_file_shortcut, destinationShortcut)
+        print(f"Successfully added Math Input Panel to Windows Accessories.")
+except PermissionError:
+    print(f"Permission denied. Please run as administrator.")
+except Exception as e:
+    print(f"Failed to add Math Input Panel to Windows Accessories: {e}")
+#Everything else
+def addShortcutsToWindowsAccessories(path):
+    source_file_shortcut = Path(path)
+    destinationShortcut = Path("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Accessories\Tablet PC") / source_file_shortcut.name
+    try:
+        if not source_file_shortcut.exists():
+            print(f"Source file {source_file_shortcut.name} does not exist.")
+        else:
+            shutil.copy(source_file_shortcut, destinationShortcut)
+            print(f"Successfully added {source_file_shortcut.name} to Windows Accessories.")
+    except PermissionError:
+        print(f"Permission denied. Please run as administrator.")
+    except Exception as e:
+        print(f"Failed to add {source_file_shortcut.name} to Windows Accessories: {e}")
+shortcutPaths = ["Shortcuts\Paint.lnk", "Shortcuts\WordPad.lnk", "Shortcuts\Snipping Tool.lnk"]
+for path in shortcutPaths:
+    addShortcutsToWindowsAccessories(path)
