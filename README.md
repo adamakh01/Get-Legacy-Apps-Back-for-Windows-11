@@ -6,6 +6,11 @@ This is a Python script that removes a Microsoft Store version of the legacy app
 
 ---
 
+## Microsoft Store App to be Removed:
+- Paint
+
+---
+
 ## Legacy Apps:
 - mspaint.exe (Paint from Windows 7-10)
 - wordpad.exe or write.exe (Wordpad from Windows 7-11 23H2)
@@ -15,7 +20,7 @@ This is a Python script that removes a Microsoft Store version of the legacy app
 ---
 
 ## How to Run It?
-- Open CMD as an Administrator
+- In Windows Search or Run, Type ```CMD``` and click on "Run as Administrator"
 - Type ```cd "C:/{filePathWhereEverYouDownloadedIt}"```
 - Type ```python runThis.py```
 - You should have all the stuff properly installed.
